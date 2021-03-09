@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  /* background-color: burlywood; */
+  width: 90%;
+  min-height: 50rem;
+  margin: 50px auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+}
+.card {
+  border-radius: 10px;
+
+  padding: 30px;
+}
+
+/* GRID POSITION */
+.un {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 200px;
+  grid-area: 1 / 1 / 2 / 3;
+}
+.deux {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: hsl(217, 19%, 35%);
+}
+.trois {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px 1px 10px 0.8px rgba(0, 0, 0, 0.2);
+}
+
+.quatre {
+  grid-area: 2 / 2 / 3 / 4;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.cinq {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: 1 / 4 / 3 /5;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+/* /* IMAGE  */
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+/* GENERAL FOR ALL TITLE  */
+.header {
+  display: flex;
+  align-items: center;
+}
+.title {
+  display: block;
+}
+.test {
+  margin-left: 20px;
+}
+.test,
+h5 {
+  margin-bottom: 5px;
+}
+/* FOR DANIEL JONATHAN PATRICK  */
+.test.one {
+  color: hsl(0, 0%, 100%);
+}
+
+h5 + p {
+  opacity: 50%;
+}
+
+.review {
+  color: hsl(0, 0%, 100%);
+}
+.review.main {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 23px;
+  padding-right: 20px;
+  line-height: 35px;
+}
+.review.opac {
+  padding-top: 15px;
+  padding-right: 5px;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 70%;
+}
+
+/* REVIEW AND TEXT FOR JEANNETTE KIRA  */
+
+.black {
+  color: hsl(219, 29%, 14%);
+}
+
+.black.main {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 23px;
+  padding-right: 50px;
+  line-height: 30px;
+}
+
+.black.opacity {
+  padding-top: 15px;
+  padding-right: 8px;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 70%;
+}
+
+/* FOOTER  */
+
+.attribution {
+  width: 200px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* MEDIA QUERIES  */
+
+@media (max-width: 375px) {
+  .container {
+    /* background-color: blue; */
+    width: 100%;
+    min-height: 50rem;
+    margin: 50px auto;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 335px 335px 335px 335px 335px;
+    gap: 30px;
+  }
+  .card {
+    border-radius: 10px;
+    padding: 30px;
+  }
+  /* GRID POSITION */
+  .un {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top left 250px;
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  .deux {
+    grid-area: 3 / 1 / 4/ 2;
+    background-color: hsl(217, 19%, 35%);
+  }
+  .trois {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 10px 0.8px rgba(0, 0, 0, 0.2);
+  }
+
+  .quatre {
+    grid-area: 5 / 1 / 7 / 2;
+    background-color: hsl(219, 29%, 14%);
+  }
+
+  .cinq {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 7 / 1 / 8 /2;
+    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* FOOTER  */
+
+  .attribution {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 5px auto;
+  }
+}
